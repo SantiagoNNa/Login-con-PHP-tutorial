@@ -1,0 +1,122 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+		body{
+			--primary: 146,37,218;
+			--color: 44,63,80;
+			display: flex;
+			align-items:center;
+			justify-content:flex-start;
+			height:100vh;
+			background: #F1F3F6;
+			height:calc(var(--vh,1vh)*100);
+			overflow:hidden;
+			color: rgb(var(--color));
+			margin: 0;
+			}
+
+			.container{
+			display: flex;
+			flex-direction: column;
+			align-items:center;
+			justify-content:center;
+			max-width:600px;
+			width:100%;
+			background: #F1F3F6;
+			height:100vh;
+			position:relative;
+			padding: 20px;
+			margin:auto;
+			}
+
+			.die-inputs{
+				padding-bottom:20px;
+				width:100%;
+				align-content: center;
+				display: flex;
+				flex-direction: column;
+				}
+
+			.der-login  h1{
+			font-weight:normal;
+			font-size:1.8rem;
+				}
+
+			.der-input{
+
+			align-items:center;
+			justify-content:center;
+			padding-bottom: 15px;
+			}
+			.der-input label{
+				display: block;
+				padding-left:8px;
+				}
+
+			.der-input input {
+				width:100%;
+				padding:14px 20px;
+				border:0px;
+				background:#F1F3F6;
+				border-radius:18px;
+				border: 2px solid rgb(var(--color));
+				transition: all .25s ease;
+				opacity:.2;
+				box-shadow:0px 11px 35px 2px rgba(0,0,0,0.24);
+				}	
+			.der-input input:focus{
+				opacity:1;}
+
+			footer{width:100%;}
+
+			.btn-login{
+				background:rgb(var(--primary));
+				color:#fff;
+				border:0px;
+				padding:14px 20px;
+				border-radius:18px;
+				width:100%;
+				display:block;
+				cursor: pointer;
+				font-size:1.1rem;
+
+				}
+
+
+	</style>
+</head>
+<body>
+
+<form class="container">
+
+<div class="die-inputs">
+	<h1>Formulario de Registro </h1>
+
+
+	<div class="der-input">
+		<label for="nombre">Nombre</label>
+		<input type="text" id="nombre">
+	</div>
+	<div class="der-input">
+		<label for="apellido">Apellidos</label>
+		<input type="text" id="apellido">
+	</div>
+	<div class="der-input">
+		<label for="correo">Email</label>
+		<input placeholder ="example@mail.com" autocomplete="off" id="correo" type="text">
+	</div>
+
+	<div class="der-input">
+		<label for="password">Password</label>
+		<input  id="password" type="password">
+	</div>
+	
+	<footer>
+		<button class="btn-login" id="Reg"> Registrarse</button>
+	</footer>
+</div>
+</form>
+</body>
+</html>
